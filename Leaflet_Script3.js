@@ -18,22 +18,22 @@ var MC = L.geoJson(oMC, {onEachFeature: function(feature, layer) { return layer.
 
 
 var overLays = {
-"<div style='border: 1px solid black; background-color: yellow; opacity: 0.8; border-radius: 50px; width: 15px; height: 15px;'></div><div>Source Link</div>"
+"<div class='event-type'><div style='border: 1px solid black; background-color: yellow; opacity: 0.8; border-radius: 50%; width: 13px; height: 13px;margin-right:5px;float:left;'></div><span>Source Link</span></div>"
 :
 SL,
-"<div style='border: 1px solid black; background-color: purple; opacity: 0.8; border-radius: 50px; width: 15px; height: 15px;'></div><div>Maker Faire</div>"
+"<div class='event-type'><div style='border: 1px solid black; background-color: purple; opacity: 0.8; border-radius: 50%; width: 13px; height: 13px;margin-right:5px;float:left;'></div><span>Maker Faire</span></div>"
 :
 MF,
-"<div style='border: 1px solid black; background-color: green; opacity: 0.8; border-radius: 50px; width: 15px; height: 15px;'></div><div>Startup Weekend</div>"
+"<div class='event-type'><div style='border: 1px solid black; background-color: green; opacity: 0.8; border-radius: 50%; width: 13px; height: 13px;margin-right:5px;float:left;'></div><span>Startup Weekend</span></div>"
 :
 SW,
-"<div style='border: 1px solid black; background-color: white; opacity: 0.8; border-radius: 50px; width: 15px; height: 15px;'></div><div>Ice House</div>"
+"<div class='event-type'><div style='border: 1px solid black; background-color: white; opacity: 0.8; border-radius: 50%; width: 13px; height: 13px;margin-right:5px;float:left;'></div><span>Ice House</span></div>"
 :
 IH,
-"<div style='border: 1px solid black; background-color: blue; opacity: 0.8; border-radius: 50px; width: 15px; height: 15px;'></div><div>FastTrac</div>"
+"<div class='event-type'><div style='border: 1px solid black; background-color: blue; opacity: 0.8; border-radius: 50%; width: 13px; height: 13px;margin-right:5px;float:left;'></div><span>FastTrac</span></div>"
 :
 FT,
-"<div style='border: 1px solid black; background-color: orange; opacity: 0.8; border-radius: 50px; width: 15px; height: 15px;'></div><div>1 Million Cups</div>"
+"<div class='event-type'><div style='border: 1px solid black; background-color: orange; opacity: 0.8; border-radius: 50%; width: 13px; height: 13px;margin-right:5px;float:left;'></div><span>1 Million Cups</span></div>"
 :
 MC}
 
