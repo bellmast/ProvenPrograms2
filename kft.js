@@ -597,8 +597,8 @@ coordinates: [
 type: "Feature",
 properties: {
 Org: "Meta Group",
-lat: "0",
-lon: "0",
+lat: "",
+lon: "",
 Blended: "267"
 },
 geometry: {
@@ -853,8 +853,8 @@ coordinates: [
 type: "Feature",
 properties: {
 Org: "Puerto Rico SBTDC",
-lat: "0",
-lon: "0",
+lat: "",
+lon: "",
 Blended: "20"
 },
 geometry: {
