@@ -1,6 +1,23 @@
 $(document).ready(function () {runProgram()});
 
 hugeArray = []
+bigArray = []
+myArray = []
+
+dataLen = KFT.features.length
+for (i = 0; i < dataLen; i++) {
+	var thisNumba = KFT.features[i].properties.Blended
+	myArray.push(thisNumba)
+	}
+
+myArrayMin = Math.min.apply(null, myArray);
+	if (myArrayMin != "0") {
+		myArrayMin = Math.log(myArrayMin);
+	}
+	myArrayMax = Math.max.apply(null, myArray);
+	myArrayMax = Math.log(myArrayMax);
+	denominatorValue = (myArrayMax - myArrayMin)
+	
 
 var myColor = "yellow"
 var SL = L.geoJson(sourceLink, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.City)}, pointToLayer: pointToLayer})
@@ -11,11 +28,9 @@ var SW = L.geoJson(startupWeekend, {onEachFeature: function(feature, layer) { re
 myColor = "white"
 var IH = L.geoJson(iceHouse, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.City)}, pointToLayer: pointToLayer})
 myColor = "blue"
-var FT = L.geoJson(KFT, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.Org)}, pointToLayer: pointToLayer})
+var FT = L.geoJson(KFT, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.Org)}, pointToLayer: pointToLayer2})
 myColor = "orange"
 var MC = L.geoJson(oMC, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.City)}, pointToLayer: pointToLayer})
-
-
 
 var overLays = {
 "<div><div style='border: 1px solid black; background-color: yellow; opacity: 1; border-radius: 50%; width: 13px; height: 13px;float:left; margin-top:-16px; margin-left: 20px'><span style='font-size: 12px;'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSource&nbspLink</span></div>"
@@ -37,10 +52,11 @@ FT,
 :
 MC}
 
+
 function runProgram() {
 	map = L.mapbox.map('map', 'bellmast.map-cvywgjou', {layers: [SL, MF, SW, IH, FT, MC]}).setView([39.0997, -94.5783], 5);
-
-	L.control.layers(null, overLays).addTo(map);
+	
+	L.control.layers(null, overLays, {collapsed: false}).addTo(map);
 }
 
 
@@ -49,6 +65,21 @@ function pointToLayer(feature, latlng) {
 	hugeArray.push(latlng)
 	return L.circleMarker(latlng, {
 					radius: 8,
+    					fillColor: myColor,
+    					color: "#000",
+    					weight: 1,
+    					opacity: 1,
+    					fillOpacity: 0.8
+					})
+}
+
+function pointToLayer2(feature, latlng) {
+	hugeArray.push(latlng)
+	loggedValue = Math.log(feature.properties.Blended)
+	numeratorValue = (loggedValue - myArrayMin)
+	scalarValue = (10*numeratorValue)/(denominatorValue)
+	return L.circleMarker(latlng, {
+					radius: scalarValue,
     					fillColor: myColor,
     					color: "#000",
     					weight: 1,
