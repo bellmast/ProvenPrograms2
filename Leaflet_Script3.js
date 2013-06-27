@@ -11,7 +11,7 @@ var SW = L.geoJson(startupWeekend, {onEachFeature: function(feature, layer) { re
 myColor = "white"
 var IH = L.geoJson(iceHouse, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.City)}, pointToLayer: pointToLayer})
 myColor = "blue"
-var FT = L.geoJson(KFT, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.City)}, pointToLayer: pointToLayer})
+var FT = L.geoJson(KFT, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.Org)}, pointToLayer: pointToLayer})
 myColor = "orange"
 var MC = L.geoJson(oMC, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.City)}, pointToLayer: pointToLayer})
 
