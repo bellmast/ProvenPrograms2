@@ -77,7 +77,7 @@ function pointToLayer2(feature, latlng) {
 	hugeArray.push(latlng)
 	loggedValue = Math.log(feature.properties.Blended)
 	numeratorValue = (loggedValue - myArrayMin)
-	scalarValue = (10*numeratorValue)/(denominatorValue)
+	scalarValue = (7*numeratorValue)/(denominatorValue)+3
 	return L.circleMarker(latlng, {
 					radius: scalarValue,
     					fillColor: myColor,
