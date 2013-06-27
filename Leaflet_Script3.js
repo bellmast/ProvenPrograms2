@@ -29,7 +29,7 @@ myColor = "white"
 var IH = L.geoJson(iceHouse, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.City)}, pointToLayer: pointToLayer})
 myColor = "blue"
 var FT = L.geoJson(KFT, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.Org)}, pointToLayer: pointToLayer2})
-myColor = "teal"
+myColor = "aqua"
 var IS = L.geoJson(iStart, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.City)}, pointToLayer: pointToLayer})
 myColor = "brown"
 var GAN = L.geoJson(globalAN, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.City)}, pointToLayer: pointToLayer})
@@ -52,7 +52,7 @@ IH,
 "<div><div style='border: 1px solid black; background-color: blue; opacity: 1; border-radius: 50%; width: 13px; height: 13px;float:left; margin-top:-16px; margin-left: 20px'><span style='font-size: 12px;'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFastTrac</span></div>"
 :
 FT,
-"<div><div style='border: 1px solid black; background-color: teal; opacity: 1; border-radius: 50%; width: 13px; height: 13px;float:left; margin-top:-16px; margin-left: 20px'><span style='font-size: 12px;'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspiStart</span></div>"
+"<div><div style='border: 1px solid black; background-color: aqua; opacity: 1; border-radius: 50%; width: 13px; height: 13px;float:left; margin-top:-16px; margin-left: 20px'><span style='font-size: 12px;'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspiStart</span></div>"
 :
 IS,
 "<div><div style='border: 1px solid black; background-color: brown; opacity: 1; border-radius: 50%; width: 13px; height: 13px;float:left; margin-top:-16px; margin-left: 20px'><span style='font-size: 12px;'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspGAN</span></div>"
