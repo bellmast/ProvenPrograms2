@@ -38,7 +38,7 @@ FT,
 MC}
 
 function runProgram() {
-	map = L.map('map', 'bellmast.map-cvywgjou', {layers: [SL, MF, SW, IH, FT, MC]}).setView([39.0997, -94.5783], 5);
+	map = L.mapbox.map('map', 'bellmast.map-cvywgjou', {layers: [SL, MF, SW, IH, FT, MC]}).setView([39.0997, -94.5783], 5);
 
 	L.control.layers(null, overLays).addTo(map);
 }
