@@ -1,4 +1,4 @@
-{
+var cSG = {
 type: "FeatureCollection",
 features: [
 {
