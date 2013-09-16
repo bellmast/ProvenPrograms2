@@ -35,6 +35,9 @@ myColor = "saddlebrown"
 var GAN = L.geoJson(globalAN, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.City)}, pointToLayer: pointToLayer})
 myColor = "orange"
 var MC = L.geoJson(oMC, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.City)}, pointToLayer: pointToLayer})
+myColor = "crimson"
+var CSG = L.geoJson(cSG, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.City)}, pointToLayer: pointToLayer})
+
 
 var overLays = {
 "<div><div style='border: 1px solid black; background-color: yellow; opacity: 1; border-radius: 50%; width: 13px; height: 13px;float:left; margin-top:-16px; margin-left: 20px'><span style='font-size: 12px;'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSource&nbspLink</span></div>"
@@ -58,13 +61,16 @@ IS,
 "<div><div style='border: 1px solid black; background-color: saddlebrown; opacity: 1; border-radius: 50%; width: 13px; height: 13px;float:left; margin-top:-16px; margin-left: 20px'><span style='font-size: 12px;'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspGAN</span></div>"
 :
 GAN,
-"<div><div style='border: 1px solid black; background-color: orange; opacity: 1; border-radius: 50%; width: 13px; height: 13px;float:left; margin-top:-16px; margin-left: 20px'></div><span style='font-size: 12px;float:left;margin-top:-16px;margin-left:20px'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1&nbspMillion&nbspCups</span></div>"
+"<div><div style='border: 1px solid black; background-color: orange; opacity: 1; border-radius: 50%; width: 13px; height: 13px;float:left; margin-top:-16px; margin-left: 20px'><span style='font-size: 12px;'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1&nbspMillion&nbspCups</span></div>"
 :
-MC}
+MC,
+"<div><div style='border: 1px solid black; background-color: crimson; opacity: 1; border-radius: 50%; width: 13px; height: 13px;float:left; margin-top:-16px; margin-left: 20px'></div><span style='font-size: 12px;float:left;margin-top:-16px;margin-left:20px'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCSG</span></div>"
+:
+CSG}
 
 
 function runProgram() {
-	map = L.mapbox.map('map', 'bellmast.map-cvywgjou', {layers: [SL, MF, SW, IH, FT, IS, GAN, MC]}).setView([39.0997, -94.5783], 5);
+	map = L.mapbox.map('map', 'bellmast.map-cvywgjou', {layers: [SL, MF, SW, IH, FT, IS, GAN, MC, CSG]}).setView([39.0997, -94.5783], 5);
 	
 	L.control.layers(null, overLays, {collapsed: false}).addTo(map);
 }
