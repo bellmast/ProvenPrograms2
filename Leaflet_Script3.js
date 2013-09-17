@@ -36,7 +36,7 @@ var GAN = L.geoJson(globalAN, {onEachFeature: function(feature, layer) { return 
 myColor = "crimson"
 var CSG = L.geoJson(cSG, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.Place)}, pointToLayer: pointToLayer})
 myColor = "orange"
-var MC = L.geoJson(oMC, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.City)}, pointToLayer: pointToLayer})
+var MC = L.geoJson(oMC, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.City, feature.properties.Attendee)}, pointToLayer: pointToLayer})
 
 
 var overLays = {
