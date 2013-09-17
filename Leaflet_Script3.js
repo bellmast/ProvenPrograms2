@@ -34,9 +34,9 @@ var IS = L.geoJson(iStart, {onEachFeature: function(feature, layer) { return lay
 myColor = "saddlebrown"
 var GAN = L.geoJson(globalAN, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.City)}, pointToLayer: pointToLayer})
 myColor = "crimson"
-var CSG = L.geoJson(cSG, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.Place)}, pointToLayer: pointToLayer})
+var CSG = L.geoJson(cSG, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.Attendee, feature.properties.City)}, pointToLayer: pointToLayer})
 myColor = "orange"
-var MC = L.geoJson(oMC, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.Attendee)}, pointToLayer: pointToLayer})
+var MC = L.geoJson(oMC, {onEachFeature: function(feature, layer) { return layer.bindPopup(feature.properties.City)}, pointToLayer: pointToLayer})
 
 
 var overLays = {
