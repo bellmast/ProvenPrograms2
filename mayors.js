@@ -26,7 +26,7 @@ Name: "Virgil P. Bernero"
 geometry: {
 type: "Point",
 coordinates: [
--84.5555347,
+-84.6555347,
 42.732535
 ]
 }
@@ -56,7 +56,7 @@ Name: "Harlan Brownlee"
 geometry: {
 type: "Point",
 coordinates: [
--94.5785667,
+-94.4785667,
 39.0997265
 ]
 }
@@ -101,7 +101,7 @@ Name: "Andrew Clinger"
 geometry: {
 type: "Point",
 coordinates: [
--119.81380270000001,
+-119.91380270000001,
 39.5296329
 ]
 }
@@ -116,7 +116,7 @@ Name: "Roderick Cox"
 geometry: {
 type: "Point",
 coordinates: [
--94.5785667,
+-94.6785667,
 39.0997265
 ]
 }
@@ -146,7 +146,7 @@ Name: "Oscar Delgado"
 geometry: {
 type: "Point",
 coordinates: [
--119.81380270000001,
+-119.71380270000001,
 39.5296329
 ]
 }
@@ -162,7 +162,7 @@ geometry: {
 type: "Point",
 coordinates: [
 -94.5785667,
-39.0997265
+39.1997265
 ]
 }
 },
@@ -177,7 +177,7 @@ geometry: {
 type: "Point",
 coordinates: [
 -94.5785667,
-39.0997265
+38.9997265
 ]
 }
 },
@@ -191,7 +191,7 @@ Name: "Duriya Farooqui"
 geometry: {
 type: "Point",
 coordinates: [
--84.3879824,
+-84.4879824,
 33.7489954
 ]
 }
@@ -221,7 +221,7 @@ Name: "Tami Greenberg"
 geometry: {
 type: "Point",
 coordinates: [
--94.5785667,
+-94.7785667,
 39.0997265
 ]
 }
@@ -266,7 +266,7 @@ Name: "Sylvester James, Jr."
 geometry: {
 type: "Point",
 coordinates: [
--94.5785667,
+-94.3785667,
 39.0997265
 ]
 }
@@ -341,7 +341,7 @@ Name: "Bari Love"
 geometry: {
 type: "Point",
 coordinates: [
--84.3879824,
+-84.2879824,
 33.7489954
 ]
 }
@@ -402,7 +402,7 @@ geometry: {
 type: "Point",
 coordinates: [
 -94.5785667,
-39.0997265
+39.2997265
 ]
 }
 },
@@ -416,8 +416,8 @@ Name: "Luke Norris"
 geometry: {
 type: "Point",
 coordinates: [
--94.5785667,
-39.0997265
+-94.6785667,
+39.1997265
 ]
 }
 },
@@ -536,8 +536,8 @@ Name: "Paul Tyler"
 geometry: {
 type: "Point",
 coordinates: [
--94.5785667,
-39.0997265
+-94.4785667,
+39.1997265
 ]
 }
 },
@@ -611,8 +611,8 @@ Name: "Ted Zoller"
 geometry: {
 type: "Point",
 coordinates: [
--79.0558445,
-35.9131996
+-79.1558445,
+35.8131996
 ]
 }
 }
