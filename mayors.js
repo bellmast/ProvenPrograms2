@@ -20,7 +20,7 @@ coordinates: [
 type: "Feature",
 properties: {
 lat: "42.732535",
-lon: "-84.5555347",
+lon: "-84.6555347",
 Name: "Virgil P. Bernero"
 },
 geometry: {
@@ -50,7 +50,7 @@ coordinates: [
 type: "Feature",
 properties: {
 lat: "39.0997265",
-lon: "-94.5785667",
+lon: "-94.4785667",
 Name: "Harlan Brownlee"
 },
 geometry: {
@@ -95,7 +95,7 @@ coordinates: [
 type: "Feature",
 properties: {
 lat: "39.5296329",
-lon: "-119.8138027",
+lon: "-119.9138027",
 Name: "Andrew Clinger"
 },
 geometry: {
@@ -110,7 +110,7 @@ coordinates: [
 type: "Feature",
 properties: {
 lat: "39.0997265",
-lon: "-94.5785667",
+lon: "-94.6785667",
 Name: "Roderick Cox"
 },
 geometry: {
@@ -140,7 +140,7 @@ coordinates: [
 type: "Feature",
 properties: {
 lat: "39.5296329",
-lon: "-119.8138027",
+lon: "-119.7138027",
 Name: "Oscar Delgado"
 },
 geometry: {
@@ -154,7 +154,7 @@ coordinates: [
 {
 type: "Feature",
 properties: {
-lat: "39.0997265",
+lat: "39.1997265",
 lon: "-94.5785667",
 Name: "Peter deSilva"
 },
@@ -169,7 +169,7 @@ coordinates: [
 {
 type: "Feature",
 properties: {
-lat: "39.0997265",
+lat: "38.9997265",
 lon: "-94.5785667",
 Name: "Chris Evans"
 },
@@ -185,7 +185,7 @@ coordinates: [
 type: "Feature",
 properties: {
 lat: "33.7489954",
-lon: "-84.3879824",
+lon: "-84.4879824",
 Name: "Duriya Farooqui"
 },
 geometry: {
@@ -215,7 +215,7 @@ coordinates: [
 type: "Feature",
 properties: {
 lat: "39.0997265",
-lon: "-94.5785667",
+lon: "-94.7785667",
 Name: "Tami Greenberg"
 },
 geometry: {
@@ -260,7 +260,7 @@ coordinates: [
 type: "Feature",
 properties: {
 lat: "39.0997265",
-lon: "-94.5785667",
+lon: "-94.3785667",
 Name: "Sylvester James, Jr."
 },
 geometry: {
@@ -335,7 +335,7 @@ coordinates: [
 type: "Feature",
 properties: {
 lat: "33.7489954",
-lon: "-84.3879824",
+lon: "-84.2879824",
 Name: "Bari Love"
 },
 geometry: {
@@ -394,7 +394,7 @@ coordinates: [
 {
 type: "Feature",
 properties: {
-lat: "39.0997265",
+lat: "39.2997265",
 lon: "-94.5785667",
 Name: "John McGurk"
 },
@@ -409,8 +409,8 @@ coordinates: [
 {
 type: "Feature",
 properties: {
-lat: "39.0997265",
-lon: "-94.5785667",
+lat: "39.1997265",
+lon: "-94.6785667",
 Name: "Luke Norris"
 },
 geometry: {
@@ -529,8 +529,8 @@ coordinates: [
 {
 type: "Feature",
 properties: {
-lat: "39.0997265",
-lon: "-94.5785667",
+lat: "39.1997265",
+lon: "-94.4785667",
 Name: "Paul Tyler"
 },
 geometry: {
@@ -605,7 +605,7 @@ coordinates: [
 type: "Feature",
 properties: {
 lat: "35.9131996",
-lon: "-79.0558445",
+lon: "-79.1558445",
 Name: "Ted Zoller"
 },
 geometry: {
