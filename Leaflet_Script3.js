@@ -1,8 +1,17 @@
 $(document).ready(function () {runProgram()});
 
-hugeArray = []
+hugeArray = [[1]]
 bigArray = []
 myArray = []
+whatwhat = 0
+counter = 0
+kArray =[]
+k2Array = []
+hArray = []
+newArray = []
+latArray = []
+lngArray = []
+matchArray = []
 
 dataLen = KFT.features.length
 for (i = 0; i < dataLen; i++) {
@@ -79,7 +88,45 @@ function runProgram() {
 
 
 function pointToLayer(feature, latlng) {
-	hugeArray.push(latlng)
+	if (feature.properties.City == 'Kansas City') {
+		ourCity = latlng
+	}
+	indicator = 0
+	counter += 1
+	newLen = hugeArray.length
+	var olatlng = latlng
+	newArray.push(latlng)
+	for (var h = 0; h < newLen; h++) {
+		if (hugeArray[h][0]['lat'] == olatlng['lat'] || hugeArray[h][0]['lng'] == olatlng['lng']) {
+			indicator = 1
+			hugeArray[h][1] += 1
+			if ($.inArray(olatlng['lat'], latArray) != -1 || $.inArray(olatlng['lng'], lngArray) != -1) {
+				hugeArray[h][1] += 1
+			}
+			latArray.push(olatlng['lat'])
+			lngArray.push(olatlng['lng'])
+			k2Array.push(hugeArray[h][1])
+
+			for (k = 0; k < hugeArray[h][1]; k++) {
+				kArray.push(k)
+				hArray.push(h)
+				if (k%2 == 1) {
+					whatwhat+=1
+					hugeArray[h][0]['lat'] += .1
+					olatlng['lat'] += .1
+					
+					
+				} else if (k%2 == 0) {
+					
+					hugeArray[h][0]['lng'] += .1
+					olatlng['lng'] += .1
+				}
+			}
+		}
+	}
+	if (indicator == 0) {
+		hugeArray[newLen] = [olatlng, 0]
+	}
 	return L.circleMarker(latlng, {
 					radius: 8,
     					fillColor: myColor,
@@ -91,7 +138,45 @@ function pointToLayer(feature, latlng) {
 }
 
 function pointToLayer2(feature, latlng) {
-	hugeArray.push(latlng)
+	if (feature.properties.City == 'Kansas City') {
+		ourCity = latlng
+	}
+	indicator = 0
+	counter += 1
+	newLen = hugeArray.length
+	var olatlng = latlng
+	newArray.push(latlng)
+	for (var h = 0; h < newLen; h++) {
+		if (hugeArray[h][0]['lat'] == olatlng['lat'] || hugeArray[h][0]['lng'] == olatlng['lng']) {
+			indicator = 1
+			hugeArray[h][1] += 1
+			if ($.inArray(olatlng['lat'], latArray) != -1 || $.inArray(olatlng['lng'], lngArray) != -1) {
+				hugeArray[h][1] += 1
+			}
+			latArray.push(olatlng['lat'])
+			lngArray.push(olatlng['lng'])
+			k2Array.push(hugeArray[h][1])
+
+			for (k = 0; k < hugeArray[h][1]; k++) {
+				kArray.push(k)
+				hArray.push(h)
+				if (k%2 == 1) {
+					whatwhat+=1
+					hugeArray[h][0]['lat'] += .1
+					olatlng['lat'] += .1
+					
+					
+				} else if (k%2 == 0) {
+					
+					hugeArray[h][0]['lng'] += .1
+					olatlng['lng'] += .1
+				}
+			}
+		}
+	}
+	if (indicator == 0) {
+		hugeArray[newLen] = [olatlng, 0]
+	}
 	loggedValue = Math.log(feature.properties.Blended)
 	numeratorValue = (loggedValue - myArrayMin)
 	scalarValue = (7*numeratorValue)/(denominatorValue)+3
