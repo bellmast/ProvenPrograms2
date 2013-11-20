@@ -118,10 +118,12 @@ function pointToLayer(feature, latlng) {
 					olatlng['lat'] += .1
 					
 					
+					
 				} else if (k%2 == 0) {
 					
 					hugeArray[h][0]['lng'] += .1
 					olatlng['lng'] += .1
+					
 				}
 			}
 		}
@@ -129,6 +131,8 @@ function pointToLayer(feature, latlng) {
 	if (indicator == 0) {
 		hugeArray[newLen] = [olatlng, 0]
 	}
+	latlng['lat'] = olatlng['lat']
+	latlng['lng'] = olatlng['lng']
 	return L.circleMarker(latlng, {
 					radius: 8,
     					fillColor: myColor,
@@ -179,6 +183,8 @@ function pointToLayer2(feature, latlng) {
 	if (indicator == 0) {
 		hugeArray[newLen] = [olatlng, 0]
 	}
+	latlng['lat'] = olatlng['lat']
+	latlng['lng'] = olatlng['lng']
 	loggedValue = Math.log(feature.properties.Blended)
 	numeratorValue = (loggedValue - myArrayMin)
 	scalarValue = (7*numeratorValue)/(denominatorValue)+3
