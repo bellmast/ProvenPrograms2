@@ -75,7 +75,7 @@ GAN,
 "<div><div style='border: 1px solid black; background-color: red; opacity: 1; border-radius: 50%; width: 13px; height: 13px;float:left; margin-top:-16px; margin-left: 20px'><span style='font-size: 12px;'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMayors</span></div>"
 :
 MAY,
-"<div><div style='border: 1px solid black; background-color: silver; opacity: 1; border-radius: 50%; width: 13px; height: 13px;float:left; margin-top:-16px; margin-left: 20px'><span style='font-size: 12px;'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspStartup Genome/span></div>"
+"<div><div style='border: 1px solid black; background-color: silver; opacity: 1; border-radius: 50%; width: 13px; height: 13px;float:left; margin-top:-16px; margin-left: 20px'><span style='font-size: 12px;'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspStartup&nbspGenome/span></div>"
 :
 StG,
 "<div><div style='border: 1px solid black; background-color: orange; opacity: 1; border-radius: 50%; width: 13px; height: 13px;float:left; margin-top:-16px; margin-left: 20px'></div><span style='font-size: 12px;float:left;margin-top:-16px;margin-left:20px'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1&nbspMillion&nbspCups</span></div>"
