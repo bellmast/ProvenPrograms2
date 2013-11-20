@@ -93,9 +93,6 @@ function runProgram() {
 
 
 function pointToLayer(feature, latlng) {
-	if (feature.properties.City == 'Kansas City') {
-		ourCity = latlng
-	}
 	indicator = 0
 	counter += 1
 	newLen = hugeArray.length
